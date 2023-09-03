@@ -16,6 +16,6 @@ cat>>$zshPath<<EOF
 alias yflutter="zsh $newShellDir";
 EOF
 # 删除git文件
-rm -ri $gitRepoDir;
+rm -rf $gitRepoDir;
 
 source $zshPath
