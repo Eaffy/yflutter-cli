@@ -1,15 +1,9 @@
 # yflutter-cli
+## Installing
+```bash
+git clone https://github.com/Eaffy/yflutter-cli.git && cd yflutter-cli && zsh install.sh
+```
 ## Usage
-
-下载文件
 ```bash
-git clone https://github.com/Eaffy/yflutter-cli.git
-```
-进入文件夹
-```bash
-cd yflutter-cli
-```
-通过 zsh安装
-```bash
-zsh install.sh
+yflutter 工程名
 ```

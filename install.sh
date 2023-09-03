@@ -5,7 +5,7 @@ shellDir="$gitRepoDir/yflutter.sh";
 cd ~;
 rootDir="$(pwd)";
 newShellDir="$rootDir/.yflutter.sh"
-echo "gitRepoDir: $gitRepoDir, shellDir:$shellDir, rootDir=$rootDir, newShellDir=$newShellDir";
+# echo "gitRepoDir: $gitRepoDir, shellDir:$shellDir, rootDir=$rootDir, newShellDir=$newShellDir";
 # 将 .yflutter.sh 移动到根目录,加个.防止被删掉
 mv $shellDir $newShellDir;
 # .zsh位置
@@ -20,4 +20,4 @@ rm -rf $gitRepoDir;
 
 source $zshPath;
 
-cd $gitRepoDir;
+cd ..;
