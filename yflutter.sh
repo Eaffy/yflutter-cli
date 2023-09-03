@@ -15,23 +15,20 @@ cd ios/ && pod install;
 # 回到根目录
 cd ..;
 # 从 github 下载模板文件
-gcl https://github.com/Eaffy/yflutter-cli.git;
+git clone https://github.com/Eaffy/yflutter-cli.git;
 rm -rf lib
-mv ../yflutter-cli/lib lib
-rm -rf ../yflutter-cli
+mv yflutter-cli/lib lib
+rm -rf yflutter-cli
 cd lib
-# 修改AppName为工程名
+## 修改AppName为工程名
 arr=(`echo $1 | tr '_' ' '`)
 result=''
 for var in ${arr[@]}
 do
      firstLetter=`echo ${var:0:1} | awk '{print toupper($0)}'`
-     echo $firstLetter
      otherLetter=${var:1}
-     echo $otherLetter
      result=$result$firstLetter$otherLetter
-     echo $result
 done
-appName=result
+appName="${result}App"
 sed -i '' "s/AppName/$appName/g" main.dart
 echo "⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆⬆"
