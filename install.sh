@@ -18,4 +18,6 @@ EOF
 # 删除git文件
 rm -rf $gitRepoDir;
 
-source $zshPath
+source $zshPath;
+
+cd $gitRepoDir;
