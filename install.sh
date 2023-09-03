@@ -19,5 +19,3 @@ EOF
 rm -rf $gitRepoDir;
 
 source $zshPath;
-
-cd ..;
