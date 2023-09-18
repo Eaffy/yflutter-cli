@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../navigation_bar.dart';
+import '../yfc_navigation_bar.dart';
 
 class OneNavigationBarScreen extends StatelessWidget {
   const OneNavigationBarScreen({Key? key}) : super(key: key);

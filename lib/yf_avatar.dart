@@ -3,11 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:ios_platform_images/ios_platform_images.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'demos/md5.dart';
 import 'demos/read_write_files_demo.dart';
-import 'keys_consts.dart';
 import 'yf_typedefs.dart';
 
+// TODO: 使用需要添加 NSPhotoLibraryUsageDescription 到 info.plist
 class Avatar extends StatelessWidget {
   const Avatar(
       {super.key, required this.avatar, required this.onAvatarChanged});

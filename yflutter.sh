@@ -10,6 +10,9 @@ flutter pub add cupertino_icons;
 flutter pub add shared_preferences;
 flutter pub add ios_platform_images;
 flutter pub add go_router;
+flutter pub add path_provider;
+flutter pub add image_picker;
+flutter pub add crypto
 # 到 iOS 目录安装依赖
 cd ios/ && pod install;
 # 回到根目录
