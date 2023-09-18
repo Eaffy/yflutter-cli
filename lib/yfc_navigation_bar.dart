@@ -5,10 +5,7 @@ PreferredSizeWidget appBarWithOneTitle(String title) {
 }
 
 PreferredSizeWidget appBarWithTitleAndIconButton(
-    {BuildContext context,
-    String title,
-    Icon icon,
-    void Function()? onPressed}) {
+    {String title = "", required Icon icon, void Function()? onPressed}) {
   return AppBar(
     title: Text(title),
     actions: [
